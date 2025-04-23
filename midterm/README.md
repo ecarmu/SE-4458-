@@ -10,7 +10,7 @@ source code:  https://github.com/ecarmu/SE-4458-/tree/main/midterm
 
 deployed at:  https://ardaharman.pythonanywhere.com/apidocs/
 
-presentation: 
+presentation: https://youtu.be/IAdVpyamdwg
 
 
 ## ER Diagram
