@@ -4,9 +4,9 @@
 This project is an implementation of a RESTful API for an airline ticketing system, designed as part of the SE4458 Software Architecture and Design midterm.
 
 ## Deliverables
-    source code:  https://github.com/ecarmu/SE-4458-/tree/main/midterm
-    deployed at:  https://ardaharman.pythonanywhere.com/apidocs/
-    presentation: 
+source code:  https://github.com/ecarmu/SE-4458-/tree/main/midterm
+deployed at:  https://ardaharman.pythonanywhere.com/apidocs/
+presentation: 
 
 ## ER Diagram
 ER diagram:   ![ER Diagram](https://github.com/ecarmu/SE-4458-/blob/main/midterm/ER_diagram.png)
