@@ -14,7 +14,7 @@ presentation:
 
 
 ## ER Diagram
-ER diagram:   ![ER Diagram](https://github.com/ecarmu/SE-4458-/blob/main/midterm/ER_diagram.png)
+![ER Diagram](https://github.com/ecarmu/SE-4458-/blob/main/midterm/ER_diagram.png)
     
 
 ## Assumptions Made
