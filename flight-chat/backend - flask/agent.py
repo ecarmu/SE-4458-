@@ -1,7 +1,7 @@
 # agent.py
 import os, json, requests, openai
 from flask import Blueprint, request, jsonify, current_app
-from openai import RateLimitError
+from openai.error import RateLimitError
 from datetime import datetime, date
 from requests.exceptions import HTTPError
 #from app import socketio
