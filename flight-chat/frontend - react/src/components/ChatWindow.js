@@ -17,7 +17,7 @@ export default function ChatWindow() {
   }, [messages, loading]);
 
   useEffect(() => {
-    const sock = io("http://localhost:5000/");
+    const sock = io(process.env.REACT_APP_SOCKET_URL);
     setSocket(sock);
     //sock.on("bot_message", handleReply);
     sock.on('connect_error', () => {
