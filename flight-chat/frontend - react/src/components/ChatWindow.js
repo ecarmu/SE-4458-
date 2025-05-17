@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import MessageBubble from './MessageBubble';
 import InputBox from './InputBox';
-import axios from 'axios';
 import './ChatWindow.css';
 import io from 'socket.io-client';
 
