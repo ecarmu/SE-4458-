@@ -29,7 +29,7 @@ export default function ChatWindow() {
         ]);
       });
     
-    sock.on("bot_message", handleReply);
+    // sock.on("bot_message", handleReply);
     
     setSocket(sock);
 
