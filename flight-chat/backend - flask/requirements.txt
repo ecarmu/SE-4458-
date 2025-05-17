@@ -18,7 +18,7 @@ eventlet>=0.33       # or gevent>=21.8 if you prefer
 requests>=2.25
 
 # OpenAI client
-openai>=0.27
+openai==0.28.0
 
 # ORM
 SQLAlchemy>=1.4
