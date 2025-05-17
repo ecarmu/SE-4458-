@@ -1,0 +1,20 @@
+.chat-window {
+  max-width: 600px;
+  margin: 0 auto;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+}
+
+.messages {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background: #e5ddd5;
+
+  /* Add these two lines */
+  display: flex;
+  flex-direction: column;
+}
+

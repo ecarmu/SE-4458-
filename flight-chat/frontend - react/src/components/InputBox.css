@@ -1,0 +1,24 @@
+.input-box {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  outline: none;
+}
+
+.input-box button {
+  padding: 0 1rem;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.input-box button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}

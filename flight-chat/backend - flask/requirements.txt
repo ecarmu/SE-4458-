@@ -1,0 +1,24 @@
+# Web framework
+Flask>=2.0
+
+# JWT auth
+PyJWT>=2.0
+
+# CORS support
+Flask-Cors>=3.0
+
+# REST docs
+Flasgger>=0.9
+
+# WebSockets
+Flask-SocketIO>=5.0
+eventlet>=0.33       # or gevent>=21.8 if you prefer
+
+# HTTP client
+requests>=2.25
+
+# OpenAI client
+openai>=0.27
+
+# ORM
+SQLAlchemy>=1.4

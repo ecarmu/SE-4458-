@@ -1,0 +1,25 @@
+.bubble {
+  display: inline-block;  /* Shrink to content width */
+  width: auto;
+  min-width: 4rem;       /* Optional minimum width */
+  max-width: 80%;        /* Wrap text if too long */
+  margin-bottom: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 1rem;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+
+
+.user {
+  background: #dcf8c6;
+  margin-left: auto;     /* Push bubble to right */
+  text-align: right;
+}
+
+.bot {
+  background: #fff;
+  margin-right: auto;    /* Push bubble to left */
+  text-align: left;
+}
