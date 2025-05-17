@@ -15,14 +15,19 @@ from flask import Flask
 from flask_socketio import SocketIO
 from agent import run_agent_logic
 
+import os
 import openai
 
-os.getenv("OPENAI_API_KEY")
-# agent.py, at the very top of run_agent_logic
-key = os.getenv("OPENAI_API_KEY")
-print("🔑 [DEBUG] OPENAI_API_KEY present?", bool(key))
-print("🔑 [DEBUG] Key length:", len(key or ""))
-print("🔑 [DEBUG] Key repr:", repr(key))
+_raw = os.getenv("OPENAI_API_KEY", "")
+# 1) Remove any surrounding whitespace or quotes
+_clean = _raw.strip().strip('"').strip("'")
+# 2) If there are multiple lines, keep only the first
+_clean = _clean.splitlines()[0]
+# 3) (Optional) Log the result so you can verify in Render logs
+print("🔑 [SANITIZED KEY LENGTH]:", len(_clean))
+print("🔑 [SANITIZED KEY REPR]:", repr(_clean))
+
+openai.api_key = _clean
 
 
 app = Flask(__name__)
