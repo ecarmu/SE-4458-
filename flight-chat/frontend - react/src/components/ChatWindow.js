@@ -18,12 +18,20 @@ export default function ChatWindow() {
 
   useEffect(() => {
     const sock = io(process.env.REACT_APP_SOCKET_URL);
+    sock.on("connect", () => console.log("🟢 Socket connected:", sock.id));
+    sock.on("disconnect", (reason) => console.warn("🟠 Socket disconnected:", reason));
+    sock.on("connect_error", (err) => {
+    console.error("🔴 Connect error:", err);
+    setLoading(false);
+    setMessages(prev => [
+          ...prev,
+          { sender: 'bot', text: '⚠️ Could not connect to agent.' }
+        ]);
+      });
+    
+    sock.on("bot_message", handleReply);
+    
     setSocket(sock);
-    //sock.on("bot_message", handleReply);
-    sock.on('connect_error', () => {
-      setLoading(false);
-      setMessages(prev => [...prev, { sender: 'bot', text: '⚠️ Could not connect to agent.' }]);
-    });
 
     // You no longer need a persistent 'bot_message' listener here,
     // since you'll use socket.once in sendMessage.
