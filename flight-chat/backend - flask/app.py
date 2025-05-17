@@ -18,6 +18,12 @@ from agent import run_agent_logic
 import openai
 
 os.getenv("OPENAI_API_KEY")
+# agent.py, at the very top of run_agent_logic
+key = os.getenv("OPENAI_API_KEY")
+print("🔑 [DEBUG] OPENAI_API_KEY present?", bool(key))
+print("🔑 [DEBUG] Key length:", len(key or ""))
+print("🔑 [DEBUG] Key repr:", repr(key))
+
 
 app = Flask(__name__)
 CORS(app)
