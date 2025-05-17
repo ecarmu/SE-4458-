@@ -17,7 +17,7 @@ from agent import run_agent_logic
 
 import openai
 
-openai.api_key = "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"
+os.getenv("OPENAI_API_KEY")
 
 app = Flask(__name__)
 CORS(app)
