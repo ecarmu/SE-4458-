@@ -2,7 +2,8 @@ code: https://github.com/ecarmu/SE-4458-/tree/main/flight-chat
 deployments:
   * frontend: https://se-4458.vercel.app/
   * backend:  https://se-4458.onrender.com/apidocs/
-presentation video: 
+
+presentation video: https://youtu.be/IXA7I9l4Fxs
 
 
 Assumptions i made:
